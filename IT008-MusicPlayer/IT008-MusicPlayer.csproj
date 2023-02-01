@@ -53,7 +53,19 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControl\MusicItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\MusicItem.Designer.cs">
+      <DependentUpon>MusicItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Databases\DataProvider.cs" />
+    <Compile Include="LibraryScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryScreen.Designer.cs">
+      <DependentUpon>LibraryScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,8 +85,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ImageData.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomControl\MusicItem.resx">
+      <DependentUpon>MusicItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryScreen.resx">
+      <DependentUpon>LibraryScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusicJoy.resx">
       <DependentUpon>MusicJoy.cs</DependentUpon>
