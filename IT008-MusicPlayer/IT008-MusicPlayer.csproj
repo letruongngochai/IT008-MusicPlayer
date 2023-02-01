@@ -65,6 +65,18 @@
     <Compile Include="CustomControl\MusicItem.Designer.cs">
       <DependentUpon>MusicItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControl\PlaylistItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\PlaylistItem.Designer.cs">
+      <DependentUpon>PlaylistItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\PlaylistMusicItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\PlaylistMusicItem.Designer.cs">
+      <DependentUpon>PlaylistMusicItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControl\RecentMediaItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +107,12 @@
     </Compile>
     <Compile Include="MusicJoy.Designer.cs">
       <DependentUpon>MusicJoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlaylistScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlaylistScreen.Designer.cs">
+      <DependentUpon>PlaylistScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="PlayQueue.cs">
       <SubType>Form</SubType>
@@ -127,6 +145,12 @@
     <EmbeddedResource Include="CustomControl\MusicItem.resx">
       <DependentUpon>MusicItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\PlaylistItem.resx">
+      <DependentUpon>PlaylistItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\PlaylistMusicItem.resx">
+      <DependentUpon>PlaylistMusicItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControl\RecentMediaItem.resx">
       <DependentUpon>RecentMediaItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MusicJoy.resx">
       <DependentUpon>MusicJoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaylistScreen.resx">
+      <DependentUpon>PlaylistScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlayQueue.resx">
       <DependentUpon>PlayQueue.cs</DependentUpon>
