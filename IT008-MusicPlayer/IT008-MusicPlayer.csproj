@@ -53,6 +53,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControl\LoveItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\LoveItem.Designer.cs">
+      <DependentUpon>LoveItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControl\MusicItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -71,6 +77,12 @@
     </Compile>
     <Compile Include="HomeScreen.Designer.cs">
       <DependentUpon>HomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoveScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoveScreen.Designer.cs">
+      <DependentUpon>LoveScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="MusicJoy.cs">
       <SubType>Form</SubType>
@@ -97,6 +109,9 @@
     <Compile Include="SearchScreen.Designer.cs">
       <DependentUpon>SearchScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomControl\LoveItem.resx">
+      <DependentUpon>LoveItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControl\MusicItem.resx">
       <DependentUpon>MusicItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LibraryScreen.resx">
       <DependentUpon>LibraryScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoveScreen.resx">
+      <DependentUpon>LoveScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusicJoy.resx">
       <DependentUpon>MusicJoy.cs</DependentUpon>
