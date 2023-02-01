@@ -59,6 +59,12 @@
     <Compile Include="CustomControl\LoveItem.Designer.cs">
       <DependentUpon>LoveItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="MusicDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicDetail.Designer.cs">
+      <DependentUpon>MusicDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControl\MusicItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,7 +89,7 @@
     <Compile Include="CustomControl\RecentMediaItem.Designer.cs">
       <DependentUpon>RecentMediaItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Databases\DataProvider.cs" />
+    <Compile Include="Database\DataProvider.cs" />
     <Compile Include="LibraryScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </Compile>
     <EmbeddedResource Include="CustomControl\LoveItem.resx">
       <DependentUpon>LoveItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicDetail.resx">
+      <DependentUpon>MusicDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControl\MusicItem.resx">
       <DependentUpon>MusicItem.cs</DependentUpon>
