@@ -63,6 +63,7 @@ namespace IT008_MusicPlayer
             this.pbRemix.Size = new System.Drawing.Size(50, 50);
             this.pbRemix.TabIndex = 33;
             this.pbRemix.TabStop = false;
+            this.pbRemix.Click += new System.EventHandler(this.pbRemix_Click);
             // 
             // iconButton8
             // 
@@ -81,6 +82,7 @@ namespace IT008_MusicPlayer
             this.iconButton8.TabIndex = 32;
             this.iconButton8.Text = "Remix";
             this.iconButton8.UseVisualStyleBackColor = false;
+            this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click);
             // 
             // pbPop
             // 
@@ -93,6 +95,7 @@ namespace IT008_MusicPlayer
             this.pbPop.Size = new System.Drawing.Size(50, 50);
             this.pbPop.TabIndex = 31;
             this.pbPop.TabStop = false;
+            this.pbPop.Click += new System.EventHandler(this.pbPop_Click);
             // 
             // iconButton7
             // 
@@ -111,6 +114,7 @@ namespace IT008_MusicPlayer
             this.iconButton7.TabIndex = 30;
             this.iconButton7.Text = "Pop";
             this.iconButton7.UseVisualStyleBackColor = false;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
             // 
             // pbRap
             // 
@@ -123,6 +127,7 @@ namespace IT008_MusicPlayer
             this.pbRap.Size = new System.Drawing.Size(50, 50);
             this.pbRap.TabIndex = 29;
             this.pbRap.TabStop = false;
+            this.pbRap.Click += new System.EventHandler(this.pbRap_Click);
             // 
             // iconButton6
             // 
@@ -141,6 +146,7 @@ namespace IT008_MusicPlayer
             this.iconButton6.TabIndex = 28;
             this.iconButton6.Text = "Rap";
             this.iconButton6.UseVisualStyleBackColor = false;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // pbVietNam
             // 
@@ -153,6 +159,7 @@ namespace IT008_MusicPlayer
             this.pbVietNam.Size = new System.Drawing.Size(50, 50);
             this.pbVietNam.TabIndex = 27;
             this.pbVietNam.TabStop = false;
+            this.pbVietNam.Click += new System.EventHandler(this.pbVietNam_Click);
             // 
             // iconButton5
             // 
@@ -171,6 +178,7 @@ namespace IT008_MusicPlayer
             this.iconButton5.TabIndex = 26;
             this.iconButton5.Text = "VietNam";
             this.iconButton5.UseVisualStyleBackColor = false;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // pbAll
             // 
@@ -183,6 +191,7 @@ namespace IT008_MusicPlayer
             this.pbAll.Size = new System.Drawing.Size(50, 50);
             this.pbAll.TabIndex = 25;
             this.pbAll.TabStop = false;
+            this.pbAll.Click += new System.EventHandler(this.pbAll_Click);
             // 
             // iconButton3
             // 
@@ -201,6 +210,7 @@ namespace IT008_MusicPlayer
             this.iconButton3.TabIndex = 24;
             this.iconButton3.Text = "All";
             this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // pbUSUK
             // 
@@ -213,6 +223,7 @@ namespace IT008_MusicPlayer
             this.pbUSUK.Size = new System.Drawing.Size(50, 50);
             this.pbUSUK.TabIndex = 23;
             this.pbUSUK.TabStop = false;
+            this.pbUSUK.Click += new System.EventHandler(this.pbUSUK_Click);
             // 
             // iconButton2
             // 
@@ -231,6 +242,7 @@ namespace IT008_MusicPlayer
             this.iconButton2.TabIndex = 22;
             this.iconButton2.Text = "US/UK";
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -275,6 +287,7 @@ namespace IT008_MusicPlayer
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LibraryScreen";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.LibraryScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbRemix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRap)).EndInit();

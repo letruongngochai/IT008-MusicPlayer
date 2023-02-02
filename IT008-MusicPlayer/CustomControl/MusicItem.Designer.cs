@@ -49,6 +49,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.iconButton1.Size = new System.Drawing.Size(40, 40);
             this.iconButton1.TabIndex = 10;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // musicAuthor
             // 
@@ -83,6 +84,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.musicPicture.Size = new System.Drawing.Size(224, 211);
             this.musicPicture.TabIndex = 7;
             this.musicPicture.TabStop = false;
+            this.musicPicture.Click += new System.EventHandler(this.musicPicture_Click);
             // 
             // MusicItem
             // 

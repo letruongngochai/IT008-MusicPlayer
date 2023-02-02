@@ -130,6 +130,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.iconButton3.Size = new System.Drawing.Size(61, 56);
             this.iconButton3.TabIndex = 8;
             this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton1
             // 
@@ -146,6 +147,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.iconButton1.Size = new System.Drawing.Size(61, 56);
             this.iconButton1.TabIndex = 7;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // panel8
             // 
@@ -325,6 +327,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.btnLove.Text = "Add to Love List";
             this.btnLove.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLove.UseVisualStyleBackColor = false;
+            this.btnLove.Click += new System.EventHandler(this.btnLove_Click);
             // 
             // music_pictureBox
             // 
@@ -468,6 +471,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.iconButton2.Size = new System.Drawing.Size(50, 50);
             this.iconButton2.TabIndex = 11;
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // panel6
             // 
