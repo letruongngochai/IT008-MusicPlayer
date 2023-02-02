@@ -155,7 +155,7 @@ namespace IT008_MusicPlayer
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            //LoadChildForm(new SearchScreen(textBox1.Text));
+            LoadChildForm(new SearchScreen(textBox1.Text));
         }
         double GetValue(int x)
         {
