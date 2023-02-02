@@ -146,6 +146,7 @@ namespace IT008_MusicPlayer
             this.iconButton9.TabIndex = 9;
             this.iconButton9.Text = "Play Queue";
             this.iconButton9.UseVisualStyleBackColor = false;
+            this.iconButton9.Click += new System.EventHandler(this.iconButton9_Click);
             // 
             // iconButton8
             // 
@@ -164,6 +165,7 @@ namespace IT008_MusicPlayer
             this.iconButton8.TabIndex = 8;
             this.iconButton8.Text = "Library";
             this.iconButton8.UseVisualStyleBackColor = false;
+            this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click);
             // 
             // iconButton7
             // 
@@ -182,6 +184,7 @@ namespace IT008_MusicPlayer
             this.iconButton7.TabIndex = 7;
             this.iconButton7.Text = "Playlist";
             this.iconButton7.UseVisualStyleBackColor = false;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
             // 
             // iconButton6
             // 
@@ -200,6 +203,7 @@ namespace IT008_MusicPlayer
             this.iconButton6.TabIndex = 6;
             this.iconButton6.Text = "Recent Media";
             this.iconButton6.UseVisualStyleBackColor = false;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // iconButton5
             // 
@@ -218,6 +222,7 @@ namespace IT008_MusicPlayer
             this.iconButton5.TabIndex = 5;
             this.iconButton5.Text = "Love List";
             this.iconButton5.UseVisualStyleBackColor = false;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // label1
             // 
@@ -288,6 +293,7 @@ namespace IT008_MusicPlayer
             this.iconButton4.TabIndex = 4;
             this.iconButton4.Text = "Home";
             this.iconButton4.UseVisualStyleBackColor = false;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // pictureBox1
             // 
@@ -328,6 +334,8 @@ namespace IT008_MusicPlayer
             this.textBox1.Size = new System.Drawing.Size(263, 31);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Enter Name, Author...";
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // iconButton3
             // 
@@ -344,6 +352,7 @@ namespace IT008_MusicPlayer
             this.iconButton3.Size = new System.Drawing.Size(50, 50);
             this.iconButton3.TabIndex = 2;
             this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton1
             // 
@@ -359,6 +368,7 @@ namespace IT008_MusicPlayer
             this.iconButton1.Size = new System.Drawing.Size(50, 50);
             this.iconButton1.TabIndex = 0;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // mainPanel
             // 
@@ -392,6 +402,7 @@ namespace IT008_MusicPlayer
             this.Name = "MusicJoy";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MusicJoy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayAndPause)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
