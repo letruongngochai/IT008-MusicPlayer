@@ -145,6 +145,7 @@
     <Compile Include="SearchScreen.Designer.cs">
       <DependentUpon>SearchScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Variables\ListFormPanel.cs" />
     <EmbeddedResource Include="CustomControl\LoveItem.resx">
       <DependentUpon>LoveItem.cs</DependentUpon>
     </EmbeddedResource>
