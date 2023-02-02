@@ -275,6 +275,7 @@ namespace IT008_MusicPlayer
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(1666, 13);
             this.progressBar.TabIndex = 6;
+            this.progressBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.progressBar_MouseDown);
             // 
             // iconButton4
             // 

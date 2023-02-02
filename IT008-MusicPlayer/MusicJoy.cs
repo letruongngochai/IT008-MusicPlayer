@@ -157,5 +157,16 @@ namespace IT008_MusicPlayer
         {
             //LoadChildForm(new SearchScreen(textBox1.Text));
         }
+        double GetValue(int x)
+        {
+            double value = x * 1.0 / progressBar.Width;
+            int max = progressBar.Maximum;
+            int min = progressBar.Minimum;
+            return min + value * (max - min);
+        }
+        private void progressBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            MediaPlayer.Player.Ctlcontrols.currentPosition = GetValue(e.X);
+        }
     }
 }
