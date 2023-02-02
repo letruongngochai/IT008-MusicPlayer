@@ -146,6 +146,7 @@
       <DependentUpon>SearchScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Variables\ListFormPanel.cs" />
+    <Compile Include="Variables\TrackQueue.cs" />
     <EmbeddedResource Include="CustomControl\LoveItem.resx">
       <DependentUpon>LoveItem.cs</DependentUpon>
     </EmbeddedResource>
