@@ -17,6 +17,7 @@ namespace IT008_MusicPlayer
         public static bool isPause;
         private Form activeForm = null;
         public static Timer myTimer;
+        public static DataTable loveList;
         public MusicJoy()
         {
             InitializeComponent();
@@ -28,6 +29,9 @@ namespace IT008_MusicPlayer
             txtVolume.Text = "50";
 
             progressBar.SetState(3);
+
+            loveList = new DataTable();
+            loveList.Columns.Add("ID", typeof(string));
         }
 
         private void myTimer_Tick(object sender, EventArgs e)
