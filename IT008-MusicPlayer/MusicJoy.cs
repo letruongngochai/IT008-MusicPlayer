@@ -7,18 +7,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using IT008_MusicPlayer.Variables;
 
 
 namespace IT008_MusicPlayer
 {
     public partial class MusicJoy : Form
     {
+        public static bool isPause;
         private Form activeForm = null;
+        public static Timer myTimer;
         public MusicJoy()
         {
             InitializeComponent();
             Variables.ListFormPanel.ListFormsPanel.Add(mainPanel);
+            myTimer = new Timer() { Enabled = true };
+            myTimer.Tick += new EventHandler(myTimer_Tick);
+
+            trackVolume.Value = 50;
+            txtVolume.Text = "50";
+
+            progressBar.SetState(3);
+        }
+
+        private void myTimer_Tick(object sender, EventArgs e)
+        {
+            if (MediaPlayer.Player.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                progressBar.Maximum = (int)MediaPlayer.Player.Ctlcontrols.currentItem.duration;
+                progressBar.Value = (int)MediaPlayer.Player.Ctlcontrols.currentPosition;
+            }
+            try
+            {
+                txtTrackStart.Text = MediaPlayer.Player.Ctlcontrols.currentPositionString;
+                txtTrackEnd.Text = MediaPlayer.Player.Ctlcontrols.currentItem.durationString;
+                if (progressBar.Value == progressBar.Maximum + 1)
+                {
+                    progressBar.Value = 0;
+                    myTimer.Enabled = false;
+                }
+            }
+            catch
+            {
+
+            }
         }
         public void LoadChildForm(Form childForm)
         {
