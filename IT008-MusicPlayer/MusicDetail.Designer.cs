@@ -32,22 +32,10 @@ namespace IT008_MusicPlayer.CustomControl
             this.label10 = new System.Windows.Forms.Label();
             this.lbLength = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.star1 = new FontAwesome.Sharp.IconButton();
-            this.star2 = new FontAwesome.Sharp.IconButton();
-            this.star3 = new FontAwesome.Sharp.IconButton();
-            this.star4 = new FontAwesome.Sharp.IconButton();
-            this.star5 = new FontAwesome.Sharp.IconButton();
-            this.musicPicture = new System.Windows.Forms.PictureBox();
             this.lbYear = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnPlaylist = new FontAwesome.Sharp.IconButton();
-            this.btnShare = new FontAwesome.Sharp.IconButton();
-            this.btnLove = new FontAwesome.Sharp.IconButton();
-            this.music_pictureBox = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbFreq = new System.Windows.Forms.Label();
             this.lbSinger = new System.Windows.Forms.Label();
@@ -55,10 +43,8 @@ namespace IT008_MusicPlayer.CustomControl
             this.lbType = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.addingPanel = new System.Windows.Forms.Panel();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.rtbLyrics = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -70,16 +56,30 @@ namespace IT008_MusicPlayer.CustomControl
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.star1 = new FontAwesome.Sharp.IconButton();
+            this.star2 = new FontAwesome.Sharp.IconButton();
+            this.star3 = new FontAwesome.Sharp.IconButton();
+            this.star4 = new FontAwesome.Sharp.IconButton();
+            this.star5 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.musicPicture = new System.Windows.Forms.PictureBox();
+            this.btnPlaylist = new FontAwesome.Sharp.IconButton();
+            this.btnShare = new FontAwesome.Sharp.IconButton();
+            this.btnLove = new FontAwesome.Sharp.IconButton();
+            this.music_pictureBox = new System.Windows.Forms.PictureBox();
             this.panel8.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.musicPicture)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.music_pictureBox)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.addingPanel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.music_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -115,40 +115,6 @@ namespace IT008_MusicPlayer.CustomControl
             this.label2.TabIndex = 1;
             this.label2.Text = "Listening frequency:";
             // 
-            // iconButton3
-            // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Download;
-            this.iconButton3.IconColor = System.Drawing.Color.Silver;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 50;
-            this.iconButton3.Location = new System.Drawing.Point(194, 338);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(61, 56);
-            this.iconButton3.TabIndex = 8;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Play;
-            this.iconButton1.IconColor = System.Drawing.Color.Silver;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 50;
-            this.iconButton1.Location = new System.Drawing.Point(83, 338);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(61, 56);
-            this.iconButton1.TabIndex = 7;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.flowLayoutPanel1);
@@ -171,85 +137,6 @@ namespace IT008_MusicPlayer.CustomControl
             this.flowLayoutPanel1.Size = new System.Drawing.Size(296, 50);
             this.flowLayoutPanel1.TabIndex = 10;
             // 
-            // star1
-            // 
-            this.star1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.star1.FlatAppearance.BorderSize = 0;
-            this.star1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star1.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.star1.IconColor = System.Drawing.Color.Black;
-            this.star1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.star1.Location = new System.Drawing.Point(3, 3);
-            this.star1.Name = "star1";
-            this.star1.Size = new System.Drawing.Size(52, 46);
-            this.star1.TabIndex = 0;
-            this.star1.UseVisualStyleBackColor = false;
-            // 
-            // star2
-            // 
-            this.star2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.star2.FlatAppearance.BorderSize = 0;
-            this.star2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star2.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.star2.IconColor = System.Drawing.Color.Black;
-            this.star2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.star2.Location = new System.Drawing.Point(61, 3);
-            this.star2.Name = "star2";
-            this.star2.Size = new System.Drawing.Size(52, 46);
-            this.star2.TabIndex = 1;
-            this.star2.UseVisualStyleBackColor = false;
-            // 
-            // star3
-            // 
-            this.star3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.star3.FlatAppearance.BorderSize = 0;
-            this.star3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star3.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.star3.IconColor = System.Drawing.Color.Black;
-            this.star3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.star3.Location = new System.Drawing.Point(119, 3);
-            this.star3.Name = "star3";
-            this.star3.Size = new System.Drawing.Size(52, 46);
-            this.star3.TabIndex = 2;
-            this.star3.UseVisualStyleBackColor = false;
-            // 
-            // star4
-            // 
-            this.star4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.star4.FlatAppearance.BorderSize = 0;
-            this.star4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star4.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.star4.IconColor = System.Drawing.Color.Black;
-            this.star4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.star4.Location = new System.Drawing.Point(177, 3);
-            this.star4.Name = "star4";
-            this.star4.Size = new System.Drawing.Size(52, 46);
-            this.star4.TabIndex = 3;
-            this.star4.UseVisualStyleBackColor = false;
-            // 
-            // star5
-            // 
-            this.star5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.star5.FlatAppearance.BorderSize = 0;
-            this.star5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.star5.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.star5.IconColor = System.Drawing.Color.Black;
-            this.star5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.star5.Location = new System.Drawing.Point(235, 3);
-            this.star5.Name = "star5";
-            this.star5.Size = new System.Drawing.Size(52, 46);
-            this.star5.TabIndex = 4;
-            this.star5.UseVisualStyleBackColor = false;
-            // 
-            // musicPicture
-            // 
-            this.musicPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.musicPicture.Location = new System.Drawing.Point(25, 14);
-            this.musicPicture.Name = "musicPicture";
-            this.musicPicture.Size = new System.Drawing.Size(300, 300);
-            this.musicPicture.TabIndex = 3;
-            this.musicPicture.TabStop = false;
-            // 
             // lbYear
             // 
             this.lbYear.AutoSize = true;
@@ -270,72 +157,6 @@ namespace IT008_MusicPlayer.CustomControl
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(321, 225);
             this.panel3.TabIndex = 1;
-            // 
-            // btnPlaylist
-            // 
-            this.btnPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.btnPlaylist.FlatAppearance.BorderSize = 0;
-            this.btnPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlaylist.Font = new System.Drawing.Font("Cascadia Mono", 12F);
-            this.btnPlaylist.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnPlaylist.IconChar = FontAwesome.Sharp.IconChar.CirclePlus;
-            this.btnPlaylist.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPlaylist.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPlaylist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaylist.Location = new System.Drawing.Point(22, 90);
-            this.btnPlaylist.Name = "btnPlaylist";
-            this.btnPlaylist.Size = new System.Drawing.Size(281, 54);
-            this.btnPlaylist.TabIndex = 2;
-            this.btnPlaylist.Text = "Add to Playlist";
-            this.btnPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPlaylist.UseVisualStyleBackColor = false;
-            // 
-            // btnShare
-            // 
-            this.btnShare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.btnShare.FlatAppearance.BorderSize = 0;
-            this.btnShare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShare.Font = new System.Drawing.Font("Cascadia Mono", 12F);
-            this.btnShare.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnShare.IconChar = FontAwesome.Sharp.IconChar.MailForward;
-            this.btnShare.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnShare.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnShare.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShare.Location = new System.Drawing.Point(22, 160);
-            this.btnShare.Name = "btnShare";
-            this.btnShare.Size = new System.Drawing.Size(281, 54);
-            this.btnShare.TabIndex = 1;
-            this.btnShare.Text = "Share";
-            this.btnShare.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnShare.UseVisualStyleBackColor = false;
-            // 
-            // btnLove
-            // 
-            this.btnLove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.btnLove.FlatAppearance.BorderSize = 0;
-            this.btnLove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLove.Font = new System.Drawing.Font("Cascadia Mono", 12F);
-            this.btnLove.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLove.IconChar = FontAwesome.Sharp.IconChar.HeartCirclePlus;
-            this.btnLove.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLove.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLove.Location = new System.Drawing.Point(22, 20);
-            this.btnLove.Name = "btnLove";
-            this.btnLove.Size = new System.Drawing.Size(281, 54);
-            this.btnLove.TabIndex = 0;
-            this.btnLove.Text = "Add to Love List";
-            this.btnLove.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLove.UseVisualStyleBackColor = false;
-            this.btnLove.Click += new System.EventHandler(this.btnLove_Click);
-            // 
-            // music_pictureBox
-            // 
-            this.music_pictureBox.Location = new System.Drawing.Point(15, 14);
-            this.music_pictureBox.Name = "music_pictureBox";
-            this.music_pictureBox.Size = new System.Drawing.Size(319, 395);
-            this.music_pictureBox.TabIndex = 0;
-            this.music_pictureBox.TabStop = false;
             // 
             // panel4
             // 
@@ -422,19 +243,6 @@ namespace IT008_MusicPlayer.CustomControl
             this.addingPanel.TabIndex = 13;
             this.addingPanel.Visible = false;
             // 
-            // iconButton9
-            // 
-            this.iconButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.iconButton9.IconColor = System.Drawing.Color.Black;
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 30;
-            this.iconButton9.Location = new System.Drawing.Point(797, 10);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Size = new System.Drawing.Size(40, 40);
-            this.iconButton9.TabIndex = 14;
-            this.iconButton9.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Cascadia Mono", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -455,23 +263,6 @@ namespace IT008_MusicPlayer.CustomControl
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(833, 370);
             this.flowLayoutPanel2.TabIndex = 12;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 30;
-            this.iconButton2.Location = new System.Drawing.Point(1489, -1);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(50, 50);
-            this.iconButton2.TabIndex = 11;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // panel6
             // 
@@ -600,6 +391,217 @@ namespace IT008_MusicPlayer.CustomControl
             this.label5.TabIndex = 4;
             this.label5.Text = "Author:";
             // 
+            // iconButton9
+            // 
+            this.iconButton9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.iconButton9.IconColor = System.Drawing.Color.Black;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.IconSize = 30;
+            this.iconButton9.Location = new System.Drawing.Point(797, 10);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Size = new System.Drawing.Size(40, 40);
+            this.iconButton9.TabIndex = 14;
+            this.iconButton9.UseVisualStyleBackColor = true;
+            this.iconButton9.Click += new System.EventHandler(this.iconButton9_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 30;
+            this.iconButton2.Location = new System.Drawing.Point(1489, -1);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(50, 50);
+            this.iconButton2.TabIndex = 11;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // star1
+            // 
+            this.star1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.star1.FlatAppearance.BorderSize = 0;
+            this.star1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star1.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.star1.IconColor = System.Drawing.Color.Black;
+            this.star1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.star1.Location = new System.Drawing.Point(3, 3);
+            this.star1.Name = "star1";
+            this.star1.Size = new System.Drawing.Size(52, 46);
+            this.star1.TabIndex = 0;
+            this.star1.UseVisualStyleBackColor = false;
+            // 
+            // star2
+            // 
+            this.star2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.star2.FlatAppearance.BorderSize = 0;
+            this.star2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star2.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.star2.IconColor = System.Drawing.Color.Black;
+            this.star2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.star2.Location = new System.Drawing.Point(61, 3);
+            this.star2.Name = "star2";
+            this.star2.Size = new System.Drawing.Size(52, 46);
+            this.star2.TabIndex = 1;
+            this.star2.UseVisualStyleBackColor = false;
+            // 
+            // star3
+            // 
+            this.star3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.star3.FlatAppearance.BorderSize = 0;
+            this.star3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star3.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.star3.IconColor = System.Drawing.Color.Black;
+            this.star3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.star3.Location = new System.Drawing.Point(119, 3);
+            this.star3.Name = "star3";
+            this.star3.Size = new System.Drawing.Size(52, 46);
+            this.star3.TabIndex = 2;
+            this.star3.UseVisualStyleBackColor = false;
+            // 
+            // star4
+            // 
+            this.star4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.star4.FlatAppearance.BorderSize = 0;
+            this.star4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star4.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.star4.IconColor = System.Drawing.Color.Black;
+            this.star4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.star4.Location = new System.Drawing.Point(177, 3);
+            this.star4.Name = "star4";
+            this.star4.Size = new System.Drawing.Size(52, 46);
+            this.star4.TabIndex = 3;
+            this.star4.UseVisualStyleBackColor = false;
+            // 
+            // star5
+            // 
+            this.star5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.star5.FlatAppearance.BorderSize = 0;
+            this.star5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.star5.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.star5.IconColor = System.Drawing.Color.Black;
+            this.star5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.star5.Location = new System.Drawing.Point(235, 3);
+            this.star5.Name = "star5";
+            this.star5.Size = new System.Drawing.Size(52, 46);
+            this.star5.TabIndex = 4;
+            this.star5.UseVisualStyleBackColor = false;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.iconButton3.IconColor = System.Drawing.Color.Silver;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 50;
+            this.iconButton3.Location = new System.Drawing.Point(194, 338);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(61, 56);
+            this.iconButton3.TabIndex = 8;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Play;
+            this.iconButton1.IconColor = System.Drawing.Color.Silver;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 50;
+            this.iconButton1.Location = new System.Drawing.Point(83, 338);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(61, 56);
+            this.iconButton1.TabIndex = 7;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // musicPicture
+            // 
+            this.musicPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.musicPicture.Location = new System.Drawing.Point(25, 14);
+            this.musicPicture.Name = "musicPicture";
+            this.musicPicture.Size = new System.Drawing.Size(300, 300);
+            this.musicPicture.TabIndex = 3;
+            this.musicPicture.TabStop = false;
+            // 
+            // btnPlaylist
+            // 
+            this.btnPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btnPlaylist.FlatAppearance.BorderSize = 0;
+            this.btnPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlaylist.Font = new System.Drawing.Font("Cascadia Mono", 12F);
+            this.btnPlaylist.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnPlaylist.IconChar = FontAwesome.Sharp.IconChar.CirclePlus;
+            this.btnPlaylist.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPlaylist.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPlaylist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlaylist.Location = new System.Drawing.Point(22, 90);
+            this.btnPlaylist.Name = "btnPlaylist";
+            this.btnPlaylist.Size = new System.Drawing.Size(281, 54);
+            this.btnPlaylist.TabIndex = 2;
+            this.btnPlaylist.Text = "Add to Playlist";
+            this.btnPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPlaylist.UseVisualStyleBackColor = false;
+            this.btnPlaylist.Click += new System.EventHandler(this.btnPlaylist_Click);
+            // 
+            // btnShare
+            // 
+            this.btnShare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btnShare.FlatAppearance.BorderSize = 0;
+            this.btnShare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShare.Font = new System.Drawing.Font("Cascadia Mono", 12F);
+            this.btnShare.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnShare.IconChar = FontAwesome.Sharp.IconChar.MailForward;
+            this.btnShare.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShare.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnShare.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShare.Location = new System.Drawing.Point(22, 160);
+            this.btnShare.Name = "btnShare";
+            this.btnShare.Size = new System.Drawing.Size(281, 54);
+            this.btnShare.TabIndex = 1;
+            this.btnShare.Text = "Share";
+            this.btnShare.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnShare.UseVisualStyleBackColor = false;
+            // 
+            // btnLove
+            // 
+            this.btnLove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.btnLove.FlatAppearance.BorderSize = 0;
+            this.btnLove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLove.Font = new System.Drawing.Font("Cascadia Mono", 12F);
+            this.btnLove.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLove.IconChar = FontAwesome.Sharp.IconChar.HeartCirclePlus;
+            this.btnLove.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLove.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLove.Location = new System.Drawing.Point(22, 20);
+            this.btnLove.Name = "btnLove";
+            this.btnLove.Size = new System.Drawing.Size(281, 54);
+            this.btnLove.TabIndex = 0;
+            this.btnLove.Text = "Add to Love List";
+            this.btnLove.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLove.UseVisualStyleBackColor = false;
+            this.btnLove.Click += new System.EventHandler(this.btnLove_Click);
+            // 
+            // music_pictureBox
+            // 
+            this.music_pictureBox.Location = new System.Drawing.Point(15, 14);
+            this.music_pictureBox.Name = "music_pictureBox";
+            this.music_pictureBox.Size = new System.Drawing.Size(319, 395);
+            this.music_pictureBox.TabIndex = 0;
+            this.music_pictureBox.TabStop = false;
+            // 
             // MusicDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -613,9 +615,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.musicPicture)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.music_pictureBox)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -624,6 +624,8 @@ namespace IT008_MusicPlayer.CustomControl
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.music_pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

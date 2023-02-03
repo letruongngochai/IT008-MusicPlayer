@@ -59,6 +59,12 @@
     <Compile Include="CustomControl\LoveItem.Designer.cs">
       <DependentUpon>LoveItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControl\PlaylistForAddingItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\PlaylistForAddingItem.Designer.cs">
+      <DependentUpon>PlaylistForAddingItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="MusicDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     <Compile Include="Variables\TrackQueue.cs" />
     <EmbeddedResource Include="CustomControl\LoveItem.resx">
       <DependentUpon>LoveItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControl\PlaylistForAddingItem.resx">
+      <DependentUpon>PlaylistForAddingItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusicDetail.resx">
       <DependentUpon>MusicDetail.cs</DependentUpon>

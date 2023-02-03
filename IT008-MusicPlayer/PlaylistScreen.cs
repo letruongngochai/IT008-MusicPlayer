@@ -28,7 +28,6 @@ namespace IT008_MusicPlayer
 
             DataProvider provider = new DataProvider();
             DataTable dtShowMyList = provider.ExecuteQuery(query);
-            //this.label_soluongLP.Text = dtShowMyList.Rows.Count.ToString();
 
             foreach (DataRow row in dtShowMyList.Rows)
             {

@@ -144,5 +144,31 @@ namespace IT008_MusicPlayer.CustomControl
             string query = $"update MUSIC set music_freq = {Convert.ToInt32(lbFreq.Text)} where music_id = '{ID}'";
             provider.ExecuteNonQuery(query);
         }
+
+        private void btnPlaylist_Click(object sender, EventArgs e)
+        {
+            addingPanel.Visible = true;
+            loadPlaylist();
+        }
+        private void loadPlaylist()
+        {
+            flowLayoutPanel2.Controls.Clear();
+            string query = "SELECT * FROM PLAYLIST";
+
+            DataProvider provider = new DataProvider();
+            DataTable dtShowMyList = provider.ExecuteQuery(query);
+            //this.label_soluongLP.Text = dtShowMyList.Rows.Count.ToString();
+
+            foreach (DataRow row in dtShowMyList.Rows)
+            {
+                CustomControl.PlaylistForAddingItem item = new CustomControl.PlaylistForAddingItem(row, ID);
+                flowLayoutPanel2.Controls.Add(item);
+            }
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            addingPanel.Visible = false;
+        }
     }
 }
