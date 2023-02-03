@@ -53,6 +53,9 @@ namespace IT008_MusicPlayer
             this.iconButton9.TabIndex = 30;
             this.iconButton9.Text = "Remove";
             this.iconButton9.UseVisualStyleBackColor = false;
+            this.iconButton9.Click += new System.EventHandler(this.iconButton9_Click);
+            this.iconButton9.MouseEnter += new System.EventHandler(this.iconButton9_MouseEnter);
+            this.iconButton9.MouseLeave += new System.EventHandler(this.iconButton9_MouseLeave);
             // 
             // iconButton4
             // 
@@ -71,6 +74,9 @@ namespace IT008_MusicPlayer
             this.iconButton4.TabIndex = 29;
             this.iconButton4.Text = "Next";
             this.iconButton4.UseVisualStyleBackColor = false;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            this.iconButton4.MouseEnter += new System.EventHandler(this.iconButton4_MouseEnter);
+            this.iconButton4.MouseLeave += new System.EventHandler(this.iconButton4_MouseLeave);
             // 
             // iconButton1
             // 
@@ -89,6 +95,9 @@ namespace IT008_MusicPlayer
             this.iconButton1.TabIndex = 28;
             this.iconButton1.Text = "Previous";
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.iconButton1.MouseEnter += new System.EventHandler(this.iconButton1_MouseEnter);
+            this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
             // 
             // label1
             // 

@@ -36,5 +36,58 @@ namespace IT008_MusicPlayer
                 trackList.Items.Add(item);
             }
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            if (trackList.SelectedIndex > 0)
+                trackList.SelectedIndex -= 1;
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            if (trackList.SelectedIndex < trackList.Items.Count - 1)
+                trackList.SelectedIndex += 1;
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            if (trackList.Items.Count > 0)
+            {
+                HomeScreen.paths = HomeScreen.paths.Except(new string[] { trackList.SelectedItem.ToString() }).ToArray();
+                Variables.TrackQueue.TrackList.Remove(trackList.SelectedItem.ToString());
+                trackList.Items.RemoveAt(trackList.SelectedIndex);
+                Variables.MediaPlayer.Player.Ctlcontrols.stop();
+            }
+        }
+
+        private void iconButton1_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton1.BackColor = Color.Black;
+        }
+
+        private void iconButton4_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton4.BackColor = Color.Black;
+        }
+
+        private void iconButton9_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton9.BackColor = Color.Black;
+        }
+
+        private void iconButton1_MouseEnter(object sender, EventArgs e)
+        {
+            iconButton1.BackColor = Color.DarkRed;
+        }
+
+        private void iconButton4_MouseEnter(object sender, EventArgs e)
+        {
+            iconButton4.BackColor = Color.DarkRed;
+        }
+
+        private void iconButton9_MouseEnter(object sender, EventArgs e)
+        {
+            iconButton9.BackColor = Color.DarkRed;
+        }
     }
 }
