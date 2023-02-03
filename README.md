@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://www.uit.edu.vn/" title="Trường Đại học Công nghệ Thông tin" style="border: 5;">
-    <img src="https://i.imgur.com/WmMnSRt.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology">
-  </a>
-</p>
+![](https://i.imgur.com/WmMnSRt.png)
 
 <!-- Title -->
 <h1 align="center"><b>IT008.N13 Lập trình trực quan</b></h1>
@@ -34,6 +30,7 @@
 3. Mã số sinh viên: 20520481
 4. Ngôn ngữ sử dụng: C#, SQL
 5. Framework: C# Winform
+
 LƯU Ý: Nhớ đặt thư mục MusicData trong bin/Debug/
 
 ## MỘT SỐ TÍNH NĂNG CHÍNH CỦA MUSICJOY
