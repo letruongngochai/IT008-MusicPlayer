@@ -34,6 +34,7 @@
 3. Mã số sinh viên: 20520481
 4. Ngôn ngữ sử dụng: C#, SQL
 5. Framework: C# Winform
+LƯU Ý: Nhớ đặt thư mục MusicData trong bin/Debug/
 
 ## MỘT SỐ TÍNH NĂNG CHÍNH CỦA MUSICJOY
 **Home Screen**
