@@ -47,6 +47,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.lbTime.Size = new System.Drawing.Size(1086, 27);
             this.lbTime.TabIndex = 14;
             this.lbTime.Text = "Time: ";
+            this.lbTime.Click += new System.EventHandler(this.RecentMediaItem_Click);
             // 
             // iconButton1
             // 
@@ -65,6 +66,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.iconButton1.Size = new System.Drawing.Size(75, 75);
             this.iconButton1.TabIndex = 13;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // lbSinger
             // 
@@ -75,6 +77,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.lbSinger.Size = new System.Drawing.Size(661, 27);
             this.lbSinger.TabIndex = 12;
             this.lbSinger.Text = "tên ca sĩ";
+            this.lbSinger.Click += new System.EventHandler(this.RecentMediaItem_Click);
             // 
             // lbName
             // 
@@ -85,6 +88,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.lbName.Size = new System.Drawing.Size(663, 46);
             this.lbName.TabIndex = 11;
             this.lbName.Text = "tên nhạc";
+            this.lbName.Click += new System.EventHandler(this.RecentMediaItem_Click);
             // 
             // pictureBox1
             // 
@@ -94,6 +98,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.pictureBox1.Size = new System.Drawing.Size(130, 130);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.RecentMediaItem_Click);
             // 
             // RecentMediaItem
             // 
@@ -107,6 +112,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.Controls.Add(this.pictureBox1);
             this.Name = "RecentMediaItem";
             this.Size = new System.Drawing.Size(1490, 150);
+            this.Click += new System.EventHandler(this.RecentMediaItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
