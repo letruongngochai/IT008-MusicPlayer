@@ -50,6 +50,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.iconButton1.Size = new System.Drawing.Size(38, 40);
             this.iconButton1.TabIndex = 8;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // label1
             // 
@@ -60,6 +61,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.label1.Size = new System.Drawing.Size(218, 79);
             this.label1.TabIndex = 7;
             this.label1.Text = "Name";
+            this.label1.Click += new System.EventHandler(this.PlaylistMusicItem_Click);
             // 
             // label2
             // 
@@ -70,6 +72,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.label2.Size = new System.Drawing.Size(237, 61);
             this.label2.TabIndex = 6;
             this.label2.Text = "Singer";
+            this.label2.Click += new System.EventHandler(this.PlaylistMusicItem_Click);
             // 
             // pictureBox1
             // 
@@ -79,6 +82,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.pictureBox1.Size = new System.Drawing.Size(140, 140);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PlaylistMusicItem_Click);
             // 
             // PlaylistMusicItem
             // 
@@ -91,6 +95,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.Controls.Add(this.pictureBox1);
             this.Name = "PlaylistMusicItem";
             this.Size = new System.Drawing.Size(418, 150);
+            this.Click += new System.EventHandler(this.PlaylistMusicItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -31,7 +31,10 @@ namespace IT008_MusicPlayer
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlaylistScreen));
             this.newPlaylistPanel = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,9 +42,6 @@ namespace IT008_MusicPlayer
             this.playlistPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.btnPlaylist = new FontAwesome.Sharp.IconButton();
             this.newPlaylistPanel.SuspendLayout();
@@ -65,6 +65,46 @@ namespace IT008_MusicPlayer
             this.newPlaylistPanel.TabIndex = 20;
             this.newPlaylistPanel.Visible = false;
             // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton3.Font = new System.Drawing.Font("Cascadia Mono", 12F);
+            this.iconButton3.ForeColor = System.Drawing.Color.Chocolate;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.iconButton3.IconColor = System.Drawing.Color.Chocolate;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 40;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(269, 472);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(115, 54);
+            this.iconButton3.TabIndex = 20;
+            this.iconButton3.Text = "Done";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton2.Font = new System.Drawing.Font("Cascadia Mono", 12F);
+            this.iconButton2.ForeColor = System.Drawing.Color.Chocolate;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Repeat;
+            this.iconButton2.IconColor = System.Drawing.Color.Chocolate;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 40;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(254, 172);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(141, 54);
+            this.iconButton2.TabIndex = 19;
+            this.iconButton2.Text = "Change";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Cascadia Mono", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -75,6 +115,16 @@ namespace IT008_MusicPlayer
             this.label4.TabIndex = 18;
             this.label4.Text = "Cover image:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(225, 246);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // tbName
             // 
@@ -146,54 +196,6 @@ namespace IT008_MusicPlayer
             this.label5.Text = "Playlist\'s Item";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // iconButton3
-            // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.Font = new System.Drawing.Font("Cascadia Mono", 12F);
-            this.iconButton3.ForeColor = System.Drawing.Color.Chocolate;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.iconButton3.IconColor = System.Drawing.Color.Chocolate;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 40;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(269, 472);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(115, 54);
-            this.iconButton3.TabIndex = 20;
-            this.iconButton3.Text = "Done";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton2.Font = new System.Drawing.Font("Cascadia Mono", 12F);
-            this.iconButton2.ForeColor = System.Drawing.Color.Chocolate;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Repeat;
-            this.iconButton2.IconColor = System.Drawing.Color.Chocolate;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 40;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(254, 172);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(141, 54);
-            this.iconButton2.TabIndex = 19;
-            this.iconButton2.Text = "Change";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(225, 246);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -225,6 +227,7 @@ namespace IT008_MusicPlayer
             this.btnPlaylist.Text = "New Playlist";
             this.btnPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPlaylist.UseVisualStyleBackColor = false;
+            this.btnPlaylist.Click += new System.EventHandler(this.btnPlaylist_Click);
             // 
             // PlaylistScreen
             // 
@@ -242,6 +245,7 @@ namespace IT008_MusicPlayer
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PlaylistScreen";
             this.Text = "PlaylistScreen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PlaylistScreen_FormClosing);
             this.newPlaylistPanel.ResumeLayout(false);
             this.newPlaylistPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

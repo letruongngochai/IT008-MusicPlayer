@@ -48,6 +48,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.playlistTime.Size = new System.Drawing.Size(403, 22);
             this.playlistTime.TabIndex = 24;
             this.playlistTime.Text = "Time";
+            this.playlistTime.Click += new System.EventHandler(this.PlaylistItem_Click);
             // 
             // playlistName
             // 
@@ -60,6 +61,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.playlistName.Size = new System.Drawing.Size(168, 180);
             this.playlistName.TabIndex = 23;
             this.playlistName.Text = "Name";
+            this.playlistName.Click += new System.EventHandler(this.PlaylistItem_Click);
             // 
             // iconButton1
             // 
@@ -87,6 +89,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.pictureBox1.Size = new System.Drawing.Size(180, 180);
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PlaylistItem_Click);
             // 
             // PlaylistItem
             // 
@@ -99,6 +102,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.Controls.Add(this.pictureBox1);
             this.Name = "PlaylistItem";
             this.Size = new System.Drawing.Size(409, 228);
+            this.Click += new System.EventHandler(this.PlaylistItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
