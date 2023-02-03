@@ -54,6 +54,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.iconButton1.Size = new System.Drawing.Size(75, 75);
             this.iconButton1.TabIndex = 8;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // lbSinger
             // 
@@ -64,6 +65,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.lbSinger.Size = new System.Drawing.Size(661, 27);
             this.lbSinger.TabIndex = 7;
             this.lbSinger.Text = "tên ca sĩ";
+            this.lbSinger.Click += new System.EventHandler(this.LoveItem_Click);
             // 
             // lbName
             // 
@@ -74,6 +76,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.lbName.Size = new System.Drawing.Size(663, 46);
             this.lbName.TabIndex = 6;
             this.lbName.Text = "tên nhạc";
+            this.lbName.Click += new System.EventHandler(this.LoveItem_Click);
             // 
             // pictureBox1
             // 
@@ -83,6 +86,7 @@ namespace IT008_MusicPlayer.CustomControl
             this.pictureBox1.Size = new System.Drawing.Size(130, 130);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.LoveItem_Click);
             // 
             // LoveItem
             // 
@@ -95,6 +99,8 @@ namespace IT008_MusicPlayer.CustomControl
             this.Controls.Add(this.pictureBox1);
             this.Name = "LoveItem";
             this.Size = new System.Drawing.Size(1490, 150);
+            this.Load += new System.EventHandler(this.LoveItem_Load);
+            this.Click += new System.EventHandler(this.LoveItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
