@@ -13,6 +13,7 @@
 * [ Giới thiệu môn học](#gioithieumonhoc)
 * [ Giảng viên hướng dẫn](#giangvien)
 * [ Đồ án môn học](#doan)
+* [ Một số tính năng chính của MusicJoy](#tinhnang)
 ## GIỚI THIỆU MÔN HỌC
 <a name="gioithieumonhoc"></a>
 * **Tên môn học**: Lập trình trực quan
@@ -28,7 +29,7 @@
 
 
 ## ĐỒ ÁN MÔN HỌC
-<a name="doan"></a>
+<a name="tinhnang"></a>
 1. Tên đồ án: MusicJoy - Music Player
 2. Sinh viên thực hiện: Lê Trương Ngọc Hải
 3. Mã số sinh viên: 20520481
@@ -38,6 +39,7 @@
 LƯU Ý: Nhớ đặt thư mục MusicData trong bin/Debug/
 
 ## MỘT SỐ TÍNH NĂNG CHÍNH CỦA MUSICJOY
+<a name="doan"></a>
 **Home Screen**
 1. Đây là màn hình khởi tạo khi mở app.
 2. Nhấn vào nút màu cam sẽ mở ra một cửa sổ để bạn có thể mở riêng một/nhiều bài hát không nằm trong cơ sở dữ liệu của app. 
