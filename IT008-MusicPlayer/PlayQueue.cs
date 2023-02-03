@@ -41,12 +41,16 @@ namespace IT008_MusicPlayer
         {
             if (trackList.SelectedIndex > 0)
                 trackList.SelectedIndex -= 1;
+            if (trackList.SelectedIndex == 0)
+                trackList.SelectedIndex = trackList.Items.Count - 1;
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             if (trackList.SelectedIndex < trackList.Items.Count - 1)
                 trackList.SelectedIndex += 1;
+            if (trackList.SelectedIndex == trackList.Items.Count - 1)
+                trackList.SelectedIndex = 0;
         }
 
         private void iconButton9_Click(object sender, EventArgs e)
