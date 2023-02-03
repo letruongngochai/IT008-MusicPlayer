@@ -168,5 +168,31 @@ namespace IT008_MusicPlayer
         {
             MediaPlayer.Player.Ctlcontrols.currentPosition = GetValue(e.X);
         }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            MediaPlayer.Player.Ctlcontrols.stop();
+        }
+
+        private void pbPlayAndPause_Click(object sender, EventArgs e)
+        {
+            isPause = !isPause;
+            if (isPause == false)
+            {
+                pbPlayAndPause.BackgroundImage = (Bitmap)ImageData.ResourceManager.GetObject("play");
+                MediaPlayer.Player.Ctlcontrols.pause();
+            }
+            else
+            {
+                pbPlayAndPause.BackgroundImage = (Bitmap)ImageData.ResourceManager.GetObject("pause");
+                MediaPlayer.Player.Ctlcontrols.play();
+            }
+        }
+
+        private void trackVolume_Scroll(object sender, EventArgs e)
+        {
+            MediaPlayer.Player.settings.volume = trackVolume.Value;
+            txtVolume.Text = trackVolume.Value.ToString();
+        }
     }
 }
