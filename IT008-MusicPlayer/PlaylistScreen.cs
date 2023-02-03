@@ -18,6 +18,7 @@ namespace IT008_MusicPlayer
         public PlaylistScreen()
         {
             InitializeComponent();
+            LoadPlayList();
             Variables.ListFormPanel.ListFormsPanel.Add(playlistItemPanel);
         }
         private void LoadPlayList()
