@@ -169,11 +169,6 @@ namespace IT008_MusicPlayer
             MediaPlayer.Player.Ctlcontrols.currentPosition = GetValue(e.X);
         }
 
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-            MediaPlayer.Player.Ctlcontrols.stop();
-        }
-
         private void pbPlayAndPause_Click(object sender, EventArgs e)
         {
             isPause = !isPause;
@@ -187,6 +182,11 @@ namespace IT008_MusicPlayer
                 pbPlayAndPause.BackgroundImage = (Bitmap)ImageData.ResourceManager.GetObject("pause");
                 MediaPlayer.Player.Ctlcontrols.play();
             }
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            MediaPlayer.Player.Ctlcontrols.stop();
         }
 
         private void trackVolume_Scroll(object sender, EventArgs e)
