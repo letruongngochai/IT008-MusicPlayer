@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.uit.edu.vn/" title="Trường Đại học Công nghệ Thông tin" style="border: 10;">
-    <img src="https://i.imgur.com/oELOisE.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology">
+    <img src="https://i.imgur.com/gpSMUYr.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology">
   </a>
 </p>
 
@@ -69,7 +69,8 @@ LƯU Ý: Nhớ đặt thư mục MusicData trong bin/Debug/
 **Recent Media Screen**
 1. Màn hình hiện những bài hát đã nghe, kèm theo thời gian nghe bài nhạc đó.
 2. Có thể xóa.
-![](https://i.imgur.com/COMn1fT.png)
+![](https://i.imgur.com/xpYmdnX.png)
+
 
 **Playlist Screen**
 1. Hiện playlist có sẵn và playlist của người dùng.
